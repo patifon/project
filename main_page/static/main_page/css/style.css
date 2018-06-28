@@ -1,0 +1,14 @@
+html, body {
+    background-color: lightblue;
+}
+a.navbar-brand.navbar-brand1{
+    color: red;
+}
+.container.my-container{
+    background-color: lightblue;
+    height: 0;
+
+}
+button.btn.btn-success.btn-green{
+    margin-left: 12px;
+}
