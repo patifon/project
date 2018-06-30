@@ -20,7 +20,11 @@ from django.conf.urls.static import static
 
 
 urlpatterns = [
+
     url(r'^register_panel/', views.register, name='register'),
+    url(r'^user_cabinet/', views.user_cabinet, name='user_cabinet'),
+
+
 
 
 ]\

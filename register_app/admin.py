@@ -1,6 +1,7 @@
 from django.contrib import admin
 from .models import UserRegisterGroup
 
+
 # Register your models here.
 class UserRegisterAdmin (admin.ModelAdmin):
 

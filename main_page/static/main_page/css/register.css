@@ -1,10 +1,10 @@
 html, body {
     margin: 0;
-    background-color: lightblue;}
+    background-color: lightgray;}
 a.navbar-brand.navbar-brand1{
     color: red;
 }
 div.container.container-my{
-    background-color: lightblue;
+    background-color: lightgray;
 }
-.color{background-color: lightblue;}
+.color{background-color: lightgray;}
