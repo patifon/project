@@ -12,10 +12,7 @@ from django.http import HttpResponseRedirect
 def register(request):
     form = UserRegistrationForm(request.POST or None)
     form1=UserRegisterGroup
-
-
     if request.method == "POST" and form.is_valid():
-
         print(request.POST)
         print(form.cleaned_data)
         data = form.cleaned_data
@@ -95,26 +92,18 @@ def register(request):
 </body>
 </html>
         """
-
         user_html = open(path_with_name, 'w', encoding='UTF-8')
         user_html.write(template)
-        user_html = open(path_with_name, 'w', encoding='UTF-8')
+        user_html = open(path_with_name, 'r', encoding='UTF-8')
         return render(request, name_html+'.html',{'form': form})
 
-
-
-
     return render(request, 'register.html', {'form': form})
-
 
 def user_cabinet(request):
     return render(request, 'auth_error.html', locals())
 
 
 
-def files(request):
-  all_files = Article.objects.all()
-  return render(request, 'file_upload.html', locals())
 
 
 
